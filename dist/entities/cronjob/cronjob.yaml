@@ -13,7 +13,7 @@ spec:
     spec:
       template:
         spec:
-          serviceAccountName: certificates-manager-role
+          serviceAccountName: certificates-manager
           containers:
             -
               name: app
@@ -27,9 +27,9 @@ spec:
                   value: repoflow.com
                 -
                   name: EMAIL
-                  value: '${ADMIN_EMAIL@microservice-config}'
+                  value: vic.jicama@gmail.com
                 -
-                  name: CERTIFICATES_SECRET_NAME
+                  name: SSL_SECRET_NAME
                   value: certificates-secret
                 -
                   name: AWS_ACCESS_KEY_ID

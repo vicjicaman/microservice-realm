@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: certificates-manager-role
+  name: certificates-manager
   namespace: microservices-namespace
   labels:
     moduleid: microservice-realm

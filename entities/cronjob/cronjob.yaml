@@ -13,7 +13,7 @@ spec:
     spec:
       template:
         spec:
-          serviceAccountName: '${CERTIFICATES_ROLE_NAME}'
+          serviceAccountName: '${CERTIFICATES_ACCOUNT_NAME}'
           containers:
             -
               name: app
@@ -29,7 +29,7 @@ spec:
                   name: EMAIL
                   value: '${ADMIN_EMAIL@microservice-config}'
                 -
-                  name: CERTIFICATES_SECRET_NAME
+                  name: SSL_SECRET_NAME
                   value: '${CERTIFICATES_SECRET_NAME}'
                 -
                   name: AWS_ACCESS_KEY_ID
