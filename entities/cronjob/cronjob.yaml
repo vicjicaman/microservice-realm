@@ -5,7 +5,7 @@ metadata:
   namespace: '${NAMESPACE@microservice-config}'
   labels:
     moduleid: microservice-realm
-    version: 1.70.0-master
+    version: 1.70.0-create-root-realm-prod
 spec:
   schedule: '0 1 * * *'
   concurrencyPolicy: Forbid
