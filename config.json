@@ -4,6 +4,10 @@
       "url": "github.com:vicjicaman/microservice-config.git",
       "version": "file:./../microservice-config"
     },
+    "microservice-resources-config": {
+      "url": "github.com:vicjicaman/microservice-resources-config.git",
+      "version": "file:./../microservice-resources-config"
+    },
     "microservice-auth-config": {
       "url": "github.com:vicjicaman/microservice-auth-config.git",
       "version": "1.70.4-master"
