@@ -5,7 +5,7 @@ metadata:
   namespace: microservices-namespace
   labels:
     moduleid: microservice-realm
-    version: 1.70.1-create-root-realm-prod
+    version: 1.70.0-master
 spec:
   schedule: '0 1 * * *'
   concurrencyPolicy: Forbid
