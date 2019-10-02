@@ -17,7 +17,7 @@ spec:
           containers:
             -
               name: app
-              image: 'repoflow/microservice-certificates-container:linked'
+              image: 'repoflow/microservice-certificates-container:1.70.0-master'
               env:
                 -
                   name: NAMESPACE
@@ -46,4 +46,4 @@ spec:
             -
               name: data
               persistentVolumeClaim:
-                claimName: '${CLAIM_NAME}'
+                claimName: certificates-volume-claim

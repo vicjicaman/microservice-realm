@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: ${CLAIM_NAME}
+  name: certificates-volume-claim
   namespace: 'microservices-namespace'
   labels:
     moduleid: microservice-realm
