@@ -1,0 +1,58 @@
+{
+  "dependencies": {
+    "microservice-config": {
+      "url": "github.com:vicjicaman/microservice-config.git",
+      "version": "1.70.2-master"
+    },
+    "microservice-resources-config": {
+      "url": "github.com:vicjicaman/microservice-resources-config.git",
+      "version": "1.70.1-master"
+    },
+    "microservice-auth-config": {
+      "url": "github.com:vicjicaman/microservice-auth-config.git",
+      "version": "1.70.4-master"
+    },
+    "microservice-home-config": {
+      "url": "github.com:vicjicaman/microservice-home-config.git",
+      "version": "1.70.1-master"
+    },
+    "microservice-blog-config": {
+      "url": "github.com:vicjicaman/microservice-blog-config.git",
+      "version": "1.70.0-master"
+    }
+  },
+  "config": [
+    {
+      "name": "HOST",
+      "value": "${HOST@microservice-config}"
+    },
+    {
+      "name": "NAMESPACE",
+      "value": "${NAMESPACE@microservice-config}"
+    },
+    {
+      "name": "CERTIFICATES_CLAIM_NAME",
+      "value": "certificates-volume-claim"
+    },
+    {
+      "name": "CERTIFICATES_VOLUME_NAME",
+      "value": "certificates-volume"
+    },
+    {
+      "name": "CERTIFICATES_ACCOUNT_NAME",
+      "value": "certificates-manager"
+    },
+    {
+      "name": "CERTIFICATES_ROLE_NAME",
+      "value": "certificates-manager-role"
+    },
+    {
+      "name": "CERTIFICATES_SECRET_NAME",
+      "value": "certificates-secret"
+    },
+    {
+      "name": "CERTBOT_SECRET_NAME",
+      "value": "cerbot-secret"
+    }
+  ]
+}

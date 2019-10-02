@@ -1,0 +1,34 @@
+{
+  "HOST": {
+    "value": "www.repoflow.com",
+    "type": null
+  },
+  "NAMESPACE": {
+    "value": "microservices-namespace",
+    "type": null
+  },
+  "CERTIFICATES_CLAIM_NAME": {
+    "value": "certificates-volume-claim",
+    "type": null
+  },
+  "CERTIFICATES_VOLUME_NAME": {
+    "value": "certificates-volume",
+    "type": null
+  },
+  "CERTIFICATES_ACCOUNT_NAME": {
+    "value": "certificates-manager",
+    "type": null
+  },
+  "CERTIFICATES_ROLE_NAME": {
+    "value": "certificates-manager-role",
+    "type": null
+  },
+  "CERTIFICATES_SECRET_NAME": {
+    "value": "certificates-secret",
+    "type": null
+  },
+  "CERTBOT_SECRET_NAME": {
+    "value": "cerbot-secret",
+    "type": null
+  }
+}

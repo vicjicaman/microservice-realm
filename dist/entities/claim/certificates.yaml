@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: certificates-volume-claim
+  namespace: 'microservices-namespace'
+  labels:
+    moduleid: microservice-realm
+    version: 1.70.0-master
+spec:
+  storageClassName: standard
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
