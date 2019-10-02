@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: ${CERTIFICATES_ACCOUNT_NAME}
+  namespace: ${NAMESPACE@microservice-config}
+  labels:
+    moduleid: microservice-realm
+    version: 1.70.0-master
+subjects:
+- kind: ServiceAccount
+  name: ${CERTIFICATES_ACCOUNT_NAME}
+  namespace: ${NAMESPACE@microservice-config}
+roleRef:
+  kind: Role
+  name: ${CERTIFICATES_ROLE_NAME}
+  apiGroup: rbac.authorization.k8s.io

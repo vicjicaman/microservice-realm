@@ -1,0 +1,41 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: microservice-ingress
+  namespace: ${NAMESPACE@microservice-config}
+  labels:
+    moduleid: microservice-realm
+    version: 1.70.0-master
+spec:
+  tls:
+  - hosts:
+    - ${HOST@microservice-config}
+    secretName: certificates-secret
+  rules:
+  - host: ${HOST@microservice-config}
+    http:
+      paths:
+      - path: ${BASE_ROUTE_BACKEND@microservice-auth-config}
+        backend:
+          serviceName: ${SERVICE_GRAPH@microservice-auth-config}
+          servicePort: ${INTERNAL_PORT_GRAPH@microservice-auth-config}
+      - path: ${BASE_ROUTE_APP@microservice-auth-config}
+        backend:
+          serviceName: ${SERVICE_WEB@microservice-auth-config}
+          servicePort: ${INTERNAL_PORT_APP@microservice-auth-config}
+      - path: ${BASE_ROUTE_BACKEND@microservice-blog-config}
+        backend:
+          serviceName: ${SERVICE_GRAPH@microservice-blog-config}
+          servicePort: ${INTERNAL_PORT_GRAPH@microservice-blog-config}
+      - path: ${BASE_ROUTE_APP@microservice-blog-config}
+        backend:
+          serviceName: ${SERVICE_WEB@microservice-blog-config}
+          servicePort: ${INTERNAL_PORT_APP@microservice-blog-config}
+      - path: ${BASE_ROUTE_BACKEND@microservice-home-config}
+        backend:
+          serviceName: ${SERVICE_GRAPH@microservice-home-config}
+          servicePort: ${INTERNAL_PORT_GRAPH@microservice-home-config}
+      - path: ${BASE_ROUTE_APP@microservice-home-config}
+        backend:
+          serviceName: ${SERVICE_WEB@microservice-home-config}
+          servicePort: ${INTERNAL_PORT_APP@microservice-home-config}

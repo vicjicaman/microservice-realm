@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ${NAMESPACE@microservice-config}
+  labels:
+    moduleid: microservice-realm
+    version: 1.70.0-master

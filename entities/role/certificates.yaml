@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: ${NAMESPACE@microservice-config}
+  name: ${CERTIFICATES_ROLE_NAME}
+  labels:
+    moduleid: microservice-realm
+    version: 1.70.0-master
+rules:
+- apiGroups: [""]
+  resources: ["secrets"]
+  verbs: ["create", "update", "get"]
