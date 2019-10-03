@@ -30,5 +30,9 @@
   "CERTBOT_SECRET_NAME": {
     "value": "cerbot-secret",
     "type": null
+  },
+  "CERTIFICATES_CRONJOB_NAME": {
+    "value": "certificates-cronjob",
+    "type": null
   }
 }

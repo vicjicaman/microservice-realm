@@ -1,11 +1,11 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: certificates-cronjob
+  name: '${CERTIFICATES_CRONJOB_NAME}'
   namespace: '${NAMESPACE@microservice-config}'
   labels:
     moduleid: microservice-realm
-    version: 1.70.0-master
+    version: 1.70.1-master
 spec:
   schedule: '0 1 * * *'
   concurrencyPolicy: Forbid
