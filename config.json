@@ -6,15 +6,15 @@
     },
     "microservice-resources-config": {
       "url": "github.com:vicjicaman/microservice-resources-config.git",
-      "version": "1.70.0-blog-layout-update-prod"
+      "version": "1.70.2-master"
     },
     "microservice-auth-config": {
       "url": "github.com:vicjicaman/microservice-auth-config.git",
-      "version": "1.70.0-blog-layout-update-prod"
+      "version": "1.70.6-master"
     },
     "microservice-home-config": {
       "url": "github.com:vicjicaman/microservice-home-config.git",
-      "version": "1.70.0-blog-layout-update-prod"
+      "version": "1.70.2-master"
     },
     "microservice-blog-config": {
       "url": "github.com:vicjicaman/microservice-blog-config.git",
