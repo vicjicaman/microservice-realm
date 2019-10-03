@@ -1,7 +1,7 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: certificates-cronjob
+  name: ${CERTIFICATES_CRONJOB_NAME}
   namespace: '${NAMESPACE@microservice-config}'
   labels:
     moduleid: microservice-realm

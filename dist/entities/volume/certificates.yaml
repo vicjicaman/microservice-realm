@@ -4,7 +4,7 @@ metadata:
   name: "certificates-volume"
   namespace: microservices-namespace
   labels:
-    service: certificate
+    service: certificates-cronjob
     moduleid: microservice-realm
     version: 1.70.0-master
 spec:

@@ -4,7 +4,7 @@ metadata:
   name: "${CERTIFICATES_VOLUME_NAME}"
   namespace: ${NAMESPACE@microservice-config}
   labels:
-    service: certificate
+    service: ${CERTIFICATES_CRONJOB_NAME}
     moduleid: microservice-realm
     version: 1.70.0-master
 spec:

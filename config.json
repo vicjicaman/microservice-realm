@@ -6,15 +6,15 @@
     },
     "microservice-resources-config": {
       "url": "github.com:vicjicaman/microservice-resources-config.git",
-      "version": "1.70.1-master"
+      "version": "file:./../microservice-resources-config"
     },
     "microservice-auth-config": {
       "url": "github.com:vicjicaman/microservice-auth-config.git",
-      "version": "1.70.4-master"
+      "version": "file:./../microservice-auth-config"
     },
     "microservice-home-config": {
       "url": "github.com:vicjicaman/microservice-home-config.git",
-      "version": "1.70.1-master"
+      "version": "file:./../microservice-home-config"
     },
     "microservice-blog-config": {
       "url": "github.com:vicjicaman/microservice-blog-config.git",
@@ -53,6 +53,10 @@
     {
       "name": "CERTBOT_SECRET_NAME",
       "value": "cerbot-secret"
+    },
+    {
+      "name": "CERTIFICATES_CRONJOB_NAME",
+      "value": "certificates-cronjob"
     }
   ]
 }
