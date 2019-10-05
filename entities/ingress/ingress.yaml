@@ -20,27 +20,27 @@ spec:
             backend:
               serviceName: ${WEB_SERVICE_NAME@microservice-resources-config}
               servicePort: ${WEB_INTERNAL_PORT@microservice-resources-config}
-          - path: ${BASE_ROUTE_BACKEND@microservice-auth-config}
+          - path: ${BACKEND_BASE_ROUTE@microservice-auth-config}
             backend:
-              serviceName: ${SERVICE_GRAPH@microservice-auth-config}
-              servicePort: ${INTERNAL_PORT_GRAPH@microservice-auth-config}
-          - path: ${BASE_ROUTE_APP@microservice-auth-config}
+              serviceName: ${GRAPH_SERVICE_NAME@microservice-auth-config}
+              servicePort: ${GRAPH_INTERNAL_PORT@microservice-auth-config}
+          - path: ${WEB_BASE_ROUTE@microservice-auth-config}
             backend:
-              serviceName: ${SERVICE_WEB@microservice-auth-config}
-              servicePort: ${INTERNAL_PORT_APP@microservice-auth-config}
-          - path: ${BASE_ROUTE_BACKEND@microservice-blog-config}
+              serviceName: ${WEB_SERVICE_NAME@microservice-auth-config}
+              servicePort: ${WEB_INTERNAL_PORT@microservice-auth-config}
+          - path: ${BACKEND_BASE_ROUTE@microservice-blog-config}
             backend:
-              serviceName: ${SERVICE_GRAPH@microservice-blog-config}
-              servicePort: ${INTERNAL_PORT_GRAPH@microservice-blog-config}
-          - path: ${BASE_ROUTE_APP@microservice-blog-config}
+              serviceName: ${GRAPH_SERVICE_NAME@microservice-blog-config}
+              servicePort: ${GRAPH_INTERNAL_PORT@microservice-blog-config}
+          - path: ${WEB_BASE_ROUTE@microservice-blog-config}
             backend:
-              serviceName: ${SERVICE_WEB@microservice-blog-config}
-              servicePort: ${INTERNAL_PORT_APP@microservice-blog-config}
-          - path: ${BASE_ROUTE_BACKEND@microservice-home-config}
+              serviceName: ${WEB_SERVICE_NAME@microservice-blog-config}
+              servicePort: ${WEB_INTERNAL_PORT@microservice-blog-config}
+          - path: ${BACKEND_BASE_ROUTE@microservice-home-config}
             backend:
-              serviceName: ${SERVICE_GRAPH@microservice-home-config}
-              servicePort: ${INTERNAL_PORT_GRAPH@microservice-home-config}
-          - path: ${BASE_ROUTE_APP@microservice-home-config}
+              serviceName: ${GRAPH_SERVICE_NAME@microservice-home-config}
+              servicePort: ${GRAPH_INTERNAL_PORT@microservice-home-config}
+          - path: ${WEB_BASE_ROUTE@microservice-home-config}
             backend:
-              serviceName: ${SERVICE_WEB@microservice-home-config}
-              servicePort: ${INTERNAL_PORT_APP@microservice-home-config}
+              serviceName: ${WEB_SERVICE_NAME@microservice-home-config}
+              servicePort: ${WEB_INTERNAL_PORT@microservice-home-config}
