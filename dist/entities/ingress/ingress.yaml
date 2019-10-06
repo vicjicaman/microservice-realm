@@ -20,14 +20,14 @@ spec:
             backend:
               serviceName: resources-web-service
               servicePort: 3000
-          - path: ${BASE_ROUTE_BACKEND@microservice-auth-config}
+          - path: /auth/backend
             backend:
-              serviceName: ${SERVICE_GRAPH@microservice-auth-config}
-              servicePort: ${INTERNAL_PORT_GRAPH@microservice-auth-config}
-          - path: ${BASE_ROUTE_APP@microservice-auth-config}
+              serviceName: auth-graph-service
+              servicePort: 4000
+          - path: /auth
             backend:
-              serviceName: ${SERVICE_WEB@microservice-auth-config}
-              servicePort: ${INTERNAL_PORT_APP@microservice-auth-config}
+              serviceName: auth-web-service
+              servicePort: 3000
           - path: /blog/backend
             backend:
               serviceName: blog-graph-service
@@ -36,11 +36,11 @@ spec:
             backend:
               serviceName: blog-web-service
               servicePort: 3000
-          - path: ${BASE_ROUTE_BACKEND@microservice-home-config}
+          - path: /backend
             backend:
-              serviceName: ${SERVICE_GRAPH@microservice-home-config}
-              servicePort: ${INTERNAL_PORT_GRAPH@microservice-home-config}
-          - path: ${BASE_ROUTE_APP@microservice-home-config}
+              serviceName: home-graph-service
+              servicePort: 4000
+          - path: /
             backend:
-              serviceName: ${SERVICE_WEB@microservice-home-config}
-              servicePort: ${INTERNAL_PORT_APP@microservice-home-config}
+              serviceName: home-web-service
+              servicePort: 3000

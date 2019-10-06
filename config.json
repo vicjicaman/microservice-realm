@@ -6,7 +6,7 @@
     },
     "microservice-resources-config": {
       "url": "github.com:vicjicaman/microservice-resources-config.git",
-      "version": "1.70.2-master"
+      "version": "1.70.4-master"
     },
     "microservice-auth-config": {
       "url": "github.com:vicjicaman/microservice-auth-config.git",
@@ -18,7 +18,7 @@
     },
     "microservice-blog-config": {
       "url": "github.com:vicjicaman/microservice-blog-config.git",
-      "version": "1.70.0-master"
+      "version": "1.70.1-master"
     }
   },
   "config": [
