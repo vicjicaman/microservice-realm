@@ -10,8 +10,14 @@ spec:
   schedule: '0 1 * * *'
   concurrencyPolicy: Forbid
   jobTemplate:
+    metadata:
+      labels:
+        cronjob: '${CERTIFICATES_CRONJOB_NAME}'
     spec:
       template:
+        metadata:
+          labels:
+            cronjob: '${CERTIFICATES_CRONJOB_NAME}'
         spec:
           serviceAccountName: '${CERTIFICATES_ACCOUNT_NAME}'
           containers:

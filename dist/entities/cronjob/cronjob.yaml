@@ -10,8 +10,14 @@ spec:
   schedule: '0 1 * * *'
   concurrencyPolicy: Forbid
   jobTemplate:
+    metadata:
+      labels:
+        cronjob: certificates-cronjob
     spec:
       template:
+        metadata:
+          labels:
+            cronjob: certificates-cronjob
         spec:
           serviceAccountName: certificates-manager
           containers:
