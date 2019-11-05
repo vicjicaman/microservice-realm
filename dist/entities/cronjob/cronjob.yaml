@@ -2,16 +2,19 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: certificates-cronjob
-  namespace: microservices-namespace
+  namespace: repoflow-blog-namespace
   labels:
     moduleid: microservice-realm
-    version: 1.70.2-master
+    version: 1.70.3-master
 spec:
   schedule: '0 1 * * *'
   concurrencyPolicy: Forbid
   jobTemplate:
     spec:
       template:
+        metadata:
+          labels:
+            cronjob: certificates-cronjob
         spec:
           serviceAccountName: certificates-manager
           containers:
@@ -21,7 +24,7 @@ spec:
               env:
                 -
                   name: NAMESPACE
-                  value: microservices-namespace
+                  value: repoflow-blog-namespace
                 -
                   name: DOMAIN
                   value: repoflow.com

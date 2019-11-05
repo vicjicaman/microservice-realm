@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: microservice-ingress
-  namespace: microservices-namespace
+  namespace: repoflow-blog-namespace
   labels:
     moduleid: microservice-realm
     version: 1.70.0-master
@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - www.repoflow.com
+        - blog.repoflow.com
       secretName: certificates-secret
   rules:
-    - host: www.repoflow.com
+    - host: blog.repoflow.com
       http:
         paths:
           - path: /resources

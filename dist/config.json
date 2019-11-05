@@ -1,10 +1,10 @@
 {
   "HOST": {
-    "value": "www.repoflow.com",
+    "value": "blog.repoflow.com",
     "type": null
   },
   "NAMESPACE": {
-    "value": "microservices-namespace",
+    "value": "repoflow-blog-namespace",
     "type": null
   },
   "CERTIFICATES_CLAIM_NAME": {
