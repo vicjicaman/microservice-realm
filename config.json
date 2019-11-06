@@ -3,22 +3,6 @@
     "microservice-config": {
       "url": "github.com:vicjicaman/microservice-config.git",
       "version": "file:./../microservice-config"
-    },
-    "microservice-resources-config": {
-      "url": "github.com:vicjicaman/microservice-resources-config.git",
-      "version": "1.70.5-master"
-    },
-    "microservice-auth-config": {
-      "url": "github.com:vicjicaman/microservice-auth-config.git",
-      "version": "1.70.7-master"
-    },
-    "microservice-home-config": {
-      "url": "github.com:vicjicaman/microservice-home-config.git",
-      "version": "1.70.3-master"
-    },
-    "microservice-blog-config": {
-      "url": "github.com:vicjicaman/microservice-blog-config.git",
-      "version": "1.70.1-master"
     }
   },
   "config": [
