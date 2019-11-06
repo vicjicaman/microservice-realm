@@ -5,7 +5,7 @@ metadata:
   namespace: repoflow-blog-namespace
   labels:
     moduleid: microservice-realm
-    version: 1.70.0-ns-deploy-prod
+    version: 1.70.4-master
 spec:
   schedule: '0 1 * * *'
   concurrencyPolicy: Forbid
@@ -20,7 +20,7 @@ spec:
           containers:
             -
               name: app
-              image: 'repoflow/microservice-certificates-container:1.70.0-ns-deploy-prod'
+              image: 'repoflow/microservice-certificates-container:1.70.1-master'
               env:
                 -
                   name: NAMESPACE
