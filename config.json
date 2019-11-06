@@ -2,7 +2,7 @@
   "dependencies": {
     "microservice-config": {
       "url": "github.com:vicjicaman/microservice-config.git",
-      "version": "file:./../microservice-config"
+      "version": "1.70.0-ns-deploy-prod"
     }
   },
   "config": [
