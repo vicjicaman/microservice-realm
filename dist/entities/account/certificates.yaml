@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: certificates-manager
-  namespace: microservices-namespace
+  namespace: repoflow-blog-namespace
   labels:
     moduleid: microservice-realm
     version: 1.70.0-master

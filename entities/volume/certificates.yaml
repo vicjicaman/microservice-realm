@@ -7,6 +7,9 @@ metadata:
     service: ${CERTIFICATES_CRONJOB_NAME}
     moduleid: microservice-realm
     version: 1.70.0-master
+    fsOwner: "1000"
+    fsGroup: "1000"
+    fsMode: "770"
 spec:
   capacity:
     storage: "1Gi"

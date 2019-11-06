@@ -2,11 +2,14 @@ apiVersion: "v1"
 kind: "PersistentVolume"
 metadata:
   name: "certificates-volume"
-  namespace: microservices-namespace
+  namespace: repoflow-blog-namespace
   labels:
     service: certificates-cronjob
     moduleid: microservice-realm
     version: 1.70.0-master
+    fsOwner: "1000"
+    fsGroup: "1000"
+    fsMode: "770"
 spec:
   capacity:
     storage: "1Gi"
