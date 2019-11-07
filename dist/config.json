@@ -12,7 +12,7 @@
     "type": null
   },
   "CERTIFICATES_VOLUME_NAME": {
-    "value": "certificates-volume",
+    "value": "repoflow-blog-certificates-volume",
     "type": null
   },
   "CERTIFICATES_ACCOUNT_NAME": {
