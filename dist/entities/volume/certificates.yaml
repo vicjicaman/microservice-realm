@@ -1,7 +1,7 @@
 apiVersion: "v1"
 kind: "PersistentVolume"
 metadata:
-  name: "certificates-volume"
+  name: "repoflow-blog-certificates-volume"
   namespace: repoflow-blog-namespace
   labels:
     service: certificates-cronjob
@@ -12,9 +12,9 @@ metadata:
     fsMode: "770"
 spec:
   capacity:
-    storage: "1Gi"
+    storage: "100Mi"
   accessModes:
     - "ReadWriteOnce"
-  awsElasticBlockStore:
-    fsType: "ext4"
-    volumeID: "vol-0572afea6012336e3"
+  storageClassName: local-storage
+  hostPath:
+    path: /home/docker/production/blog.repoflow.com/volumes/certificates-volume
