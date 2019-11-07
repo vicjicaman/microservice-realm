@@ -20,7 +20,7 @@
     },
     {
       "name": "CERTIFICATES_VOLUME_NAME",
-      "value": "certificates-volume"
+      "value": "repoflow-blog-certificates-volume"
     },
     {
       "name": "CERTIFICATES_ACCOUNT_NAME",
