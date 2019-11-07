@@ -7,12 +7,12 @@ metadata:
     moduleid: microservice-realm
     version: 1.70.0-master
 spec:
-  storageClassName: standard
+  storageClassName: local-storage
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 1Gi
+      storage: "100Mi"
   selector:
     matchLabels:
       service: "${CERTIFICATES_CRONJOB_NAME}"
