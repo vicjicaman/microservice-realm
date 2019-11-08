@@ -17,4 +17,4 @@ spec:
     - "ReadWriteOnce"
   storageClassName: local-storage
   hostPath:
-    path: /home/docker/production/blog.repoflow.com/volumes/certificates-volume
+    path: /home/docker/production/${HOST@microservice-config}/volumes/${CERTIFICATES_VOLUME_NAME}
