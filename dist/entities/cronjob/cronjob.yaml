@@ -5,7 +5,7 @@ metadata:
   namespace: repoflow-blog-namespace
   labels:
     moduleid: microservice-realm
-    version: 1.70.5-master
+    version: 1.70.0-deploy-realms-v1-prod
 spec:
   schedule: '0 1 * * *'
   concurrencyPolicy: Forbid
