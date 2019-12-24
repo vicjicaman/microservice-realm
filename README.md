@@ -6,10 +6,10 @@ This repository have the common and bootstraping configurations for the cluster.
 
 Here is a list of other repositories for each mayor functionality:
 
-https://github.com/vicjicaman/microservice-auth-realm
-https://github.com/vicjicaman/microservice-home-realm
-https://github.com/vicjicaman/microservice-blog-realm
-https://github.com/vicjicaman/microservice-resources-realm
+ - https://github.com/vicjicaman/microservice-auth-realm
+ - https://github.com/vicjicaman/microservice-home-realm
+ - https://github.com/vicjicaman/microservice-blog-realm
+ - https://github.com/vicjicaman/microservice-resources-realm
 
 Some test/experimental functionalities are:
  - Get content from a S3 page.
