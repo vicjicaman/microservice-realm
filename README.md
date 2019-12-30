@@ -1,6 +1,6 @@
 # microservice-realm
 
-This is a blog that is running un Kubernetes and acts as a test/lab/battleground for the features and features that I want to test for my productions clusters, here is the link to the home page: https://blog.repoflow.com
+This is a blog that is running in Kubernetes and acts as a test/lab/battleground for the features that I want to test for my productions clusters, here is the link to the home page: https://blog.repoflow.com
 
 This repository have the common and bootstraping configurations for the cluster.
 
@@ -13,7 +13,7 @@ Here is a list of other repositories for each mayor functionality:
 
 Some test/experimental functionalities are:
  - Get content from a S3 page.
- - List the services and pods of the cluster.
+ - List the services and pods of the cluster on the home page.
  - Separate auth and resources data and cache services.
  
 If you have any feature suggestion to implement and experiment let me know.
